@@ -47,6 +47,7 @@ namespace SceneHub
 
                             EditorGUILayout.PropertyField(element.FindPropertyRelative(nameof(SceneInfo.Title)));
                             EditorGUILayout.PropertyField(element.FindPropertyRelative(nameof(SceneInfo.Scene)));
+                            EditorGUILayout.PropertyField(element.FindPropertyRelative(nameof(SceneInfo.Color)));
                         }
                         EditorGUILayout.EndVertical();
 

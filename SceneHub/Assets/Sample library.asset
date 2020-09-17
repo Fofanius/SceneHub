@@ -17,3 +17,4 @@ MonoBehaviour:
   Scenes:
   - Title: 
     Scene: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+    Color: {r: 0.7924528, g: 0.13082945, b: 0.13082945, a: 1}

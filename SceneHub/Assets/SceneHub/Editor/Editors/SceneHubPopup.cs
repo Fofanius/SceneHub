@@ -83,11 +83,13 @@ namespace SceneHub
                 {
                     EditorGUILayout.BeginHorizontal();
                     {
-                        if (GUILayout.Button(info.SafeTitle))
+                        GUI.color = info.Color;
                         {
-                            Change(info.Scene, false);
+                            if (GUILayout.Button(info.SafeTitle))
+                            {
+                                Change(info.Scene, false);
+                            }
                         }
-
                         GUI.color = Color.green;
                         {
                             if (GUILayout.Button(MOVE_AND_PLAY_CONTENT, GUILayout.Width(40f)))

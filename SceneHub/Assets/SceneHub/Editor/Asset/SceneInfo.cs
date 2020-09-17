@@ -11,11 +11,13 @@ namespace SceneHub
         [SerializeField] internal string Title;
         [Tooltip("Ссылка на объект сцены.")]
         [SerializeField] internal SceneAsset Scene;
+        [Tooltip("Цвет, которым будет отображаться кнопка в hub-е.")]
+        [SerializeField] internal Color Color;
 #pragma warning restore 0649
 
 
         public string SafeTitle => string.IsNullOrWhiteSpace(Title) ? $"[{(Scene ? Scene.name : "Empty")}]" : Title;
-        
+
         public override string ToString() => $"{Title} [{Scene}]";
     }
 }
